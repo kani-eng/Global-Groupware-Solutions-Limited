@@ -1,0 +1,178 @@
+/* =================== GLOBAL STYLES =================== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* =================== LOGIN CONTAINER =================== */
+.login-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.login-container h2 {
+  margin-bottom: 15px;
+}
+
+.login-container input {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.login-container button:hover {
+  background: #0056b3;
+}
+
+/* =================== USERS CONTAINER =================== */
+.users-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* =================== USER CARD =================== */
+.user-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.user-card:hover {
+  transform: scale(1.02);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.user-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #007bff;
+}
+
+.user-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user-email {
+  font-size: 14px;
+  color: gray;
+}
+
+/* =================== EDIT & DELETE BUTTONS =================== */
+.user-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.edit-btn {
+  background: green;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: darkgreen;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+/* =================== LOGOUT BUTTON =================== */
+.logout-btn {
+  background: blue;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: darkblue;
+}
+
+/* =================== EDIT MODAL =================== */
+.edit-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.edit-modal input {
+  width: 100%;
+}
+
+.edit-modal button {
+  margin: 5px;
+}
+
+/* =================== ERROR MESSAGE =================== */
+.error {
+  color: red;
+  font-size: 14px;
+}
